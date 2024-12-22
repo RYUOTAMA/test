@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Equipment Borrowing</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ยืมอุปกรณ์กีฬา</h1>
+        <form id="borrowForm">
+            <input type="text" id="studentName" placeholder="ชื่อนักเรียน" required>
+            <input type="text" id="equipmentName" placeholder="ชื่ออุปกรณ์กีฬา" required>
+            <input type="number" id="quantity" placeholder="จำนวน" required>
+            <button type="submit">เพิ่มรายการ</button>
+        </form>
+        <table id="borrowTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ชื่อนักเรียน</th>
+                    <th>ชื่ออุปกรณ์กีฬา</th>
+                    <th>จำนวน</th>
+                    <th>ลบ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="3.js"></script>
+</body>
+</html>
+
