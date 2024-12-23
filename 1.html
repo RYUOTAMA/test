@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Equipment Borrowing</title>
-    <link rel="stylesheet" href="2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบยืมอุปกรณ์กีฬา</title>
+  <script src="3.js" defer></script> <!-- เพิ่ม defer เพื่อให้โหลด script.js หลังจากโหลด HTML เสร็จ -->
 </head>
 <body>
-    <div class="container">
-        <h1>ยืมอุปกรณ์กีฬา</h1>
-        <form id="borrowForm">
-            <input type="text" id="studentName" placeholder="ชื่อนักเรียน" required>
-            <input type="text" id="equipmentName" placeholder="ชื่ออุปกรณ์กีฬา" required>
-            <input type="number" id="quantity" placeholder="จำนวน" required>
-            <button type="submit">เพิ่มรายการ</button>
-        </form>
-        <table id="borrowTable">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>ชื่อนักเรียน</th>
-                    <th>ชื่ออุปกรณ์กีฬา</th>
-                    <th>จำนวน</th>
-                    <th>ลบ</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rows will be added dynamically -->
-            </tbody>
-        </table>
-    </div>
-    <script src="3.js"></script>
+  <h1>ระบบยืมอุปกรณ์กีฬา</h1>
+
+  <form id="borrow-form">
+    <label for="borrower-name">ชื่อผู้ยืม:</label>
+    <input type="text" id="borrower-name" required><br><br>
+
+    <label for="equipment-name">ชื่ออุปกรณ์กีฬา:</label>
+    <input type="text" id="equipment-name" required><br><br>
+
+    <label for="borrow-date">วันที่ยืม:</label>
+    <input type="date" id="borrow-date" required><br><br>
+
+    <button type="button" onclick="saveBorrowData()">บันทึกข้อมูลการยืม</button>
+  </form>
+
+  <br>
+  <a href="index.html">ดูข้อมูลการยืม</a> <!-- ลิงก์ไปหน้ารายการ -->
 </body>
 </html>
-

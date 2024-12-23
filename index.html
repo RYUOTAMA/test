@@ -1,18 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ยืมอุปกรณ์กีฬา</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ข้อมูลการยืมอุปกรณ์กีฬา</title>
+  <style>
+    /* เพิ่มสไตล์เพื่อทำให้ตารางดูสวยงาม */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <script src="4.js" defer></script> <!-- เชื่อมโยงกับไฟล์ records.js -->
 </head>
 <body>
-    <div class="container">
-        <h1>ยืมอุปกรณ์กีฬา</h1>
-        <img src="img/unnamed.png" alt="Logo" class="logo">
-        <a href="1.html"><button class="btn">นักเรียน</button></a>
-
-    </div>
+  <h1>ข้อมูลการยืมอุปกรณ์กีฬา</h1>
+  
+  <table id="borrow-table">
+    <thead>
+      <tr>
+        <th>ชื่อผู้ยืม</th>
+        <th>ชื่ออุปกรณ์กีฬา</th>
+        <th>วันที่ยืม</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ข้อมูลการยืมจะถูกเพิ่มที่นี่ -->
+    </tbody>
+  </table>
+  
+  <br>
+  <a href="1.html">กลับไปยังหน้ากรอกข้อมูล</a>
 </body>
 </html>
-
